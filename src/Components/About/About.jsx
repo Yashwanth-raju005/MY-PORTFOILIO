@@ -21,7 +21,8 @@ const About = () => {
             I’m a passionate web developer dedicated to creating responsive,
             user-friendly, and visually appealing websites. With a strong
             foundation in [HTML, CSS, JavaScript], and experience in frameworks
-            like [React, Angular, or Vue.js], I specialize in building seamless
+            like [React, D3.js], Backend Technologies [Node.js , Express.js]
+            Databases[MongoDB,Jwt Tokens] I specialize in building seamless
             digital experiences tailored to user needs.
           </p>
 
