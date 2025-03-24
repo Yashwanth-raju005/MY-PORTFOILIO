@@ -8,9 +8,9 @@ const ScrollDown = () => {
       <a href="#about" className="home__scroll-button button-flex">
         <div className="mouse" >
 
-        <i className="uil uil-mouse-alt"></i>
+        <img src="https://cdn-icons-png.flaticon.com/128/3249/3249525.png" alt="" className="ar-icon"/>
         <span className="home__scroll-name">Scroll Down 
-            <i className="uil uil-arrow-down"></i>
+            
         </span>
 
         </div>

@@ -27,7 +27,7 @@ const About = () => {
           </p>
 
           <a target="_blank" href={Resume} className="button button--flex">
-            Download CV <i className="uil uil-file"></i>
+            Download CV  <img src="https://cdn-icons-png.flaticon.com/128/9797/9797374.png" alt="" className="down-icon"/>
           </a>
         </div>
       </div>

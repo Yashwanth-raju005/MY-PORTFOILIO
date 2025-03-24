@@ -14,7 +14,7 @@
   column-gap: 100px;
 }
 
-.card-sub{
+.card-sub {
   background: url("https://imgs.search.brave.com/z1rKOVpTEuOVNHUmtNwO1ik4nL_C_9Tna9WyJYE_SeY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMTgvMDkv/TmF0dXJhbC1Xb29k/LVBhbmVscy1TaW1w/bGUtQmFja2dyb3Vu/ZC1JbWFnZS5qcGVn");
 }
 
@@ -36,7 +36,7 @@
   display: none;
 }
 
-.pro-head{
+.pro-head {
   font-size: 31px;
 }
 
@@ -44,6 +44,10 @@
   width: 367px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+}
+
+.bu > button {
+  width: 100px;
 }
 
 .card-techstacks {
@@ -61,11 +65,10 @@
 .card-title {
   padding-left: 3px;
   padding-top: 19px;
-  
 }
 
-.card-title h3{
-    color: white;
+.card-title h3 {
+  color: white;
 }
 
 .card-details {
@@ -91,8 +94,8 @@
 }
 
 .card-btn {
-  background-color: purple;
-  color: white;
+  background-color: rgb(23, 186, 245);
+  color: black;
   border-radius: 5px;
   padding: 4px;
 }

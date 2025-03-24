@@ -10,21 +10,21 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-instagram"></i>
+        <img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="" />
       </a>
       <a
         href="https://www.linkedin.com/in/yashwanth-raju-2a09a42a5/"
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-linkedin"></i>
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384088.png"  alt="" />
       </a>
       <a
         href="https://github.com/Yashwanth-raju005"
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-github"></i>
+        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111425.png" alt="" />
       </a>
     </div>
   );

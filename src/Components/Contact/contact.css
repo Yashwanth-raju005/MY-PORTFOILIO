@@ -91,7 +91,6 @@
   border: 2px solid #ffffff;
   border-radius: 6px;
   opacity: 0;
-  animation: borderAnimation 2s infinite alternate;
 }
 
 .submit-button:hover {

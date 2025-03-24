@@ -14,7 +14,7 @@ const Data = () => {
 
       <a href="#contact" className="button hell button--flex " >
         Say Hello!&nbsp;&nbsp;&nbsp;&nbsp;
-        <i className="uil uil-message z-1000"></i>
+        <img src="https://cdn-icons-png.flaticon.com/128/2268/2268536.png" alt=""  className="arr-icon"/>
       </a>
     </div>
   );

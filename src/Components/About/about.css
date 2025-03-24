@@ -10,6 +10,11 @@
   justify-self: center;
 }
 
+.down-icon{
+  width: 21px;
+  margin-left: 20px;
+}
+
 .about__info {
   grid-template-columns: repeat(3, 140px);
   gap: 0.5rem;
