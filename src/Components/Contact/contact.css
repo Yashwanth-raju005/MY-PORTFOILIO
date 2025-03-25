@@ -122,13 +122,15 @@
     display: flex;
     flex-direction: column; 
   }
+
+  .form-group{
+    z-index: 1;
+  }
   
   .form-group input {
     min-width: 400px;
-    z-index: -200;
   }
   .form-group textarea{
-    z-index: -200;
   }
   .contact-head {
     font-size: 25px;
