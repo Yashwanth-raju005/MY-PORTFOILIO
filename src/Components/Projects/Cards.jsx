@@ -35,7 +35,7 @@ const Cards = ({ pro }) => {
         </div>
         <center>
           <a href={pro.githubLink} target="_blank">
-            <button className="card-btn">Click Me</button>
+            <button className="card-btn">Click Me <img src="https://cdn-icons-png.flaticon.com/128/2725/2725783.png" alt="" className="click-pic" /> </button>
           </a>
         </center>
       </div>

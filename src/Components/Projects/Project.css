@@ -93,11 +93,20 @@
   color: rgb(79, 79, 138);
 }
 
+.click-pic{
+  width: 20px;
+}
+
 .card-btn {
-  background-color: rgb(23, 186, 245);
-  color: black;
+  background-color:black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
   border-radius: 5px;
   padding: 4px;
+  margin-top: 10px;
+  border: 2px yellow solid;
 }
 
 @media screen and (max-width: 576px) {

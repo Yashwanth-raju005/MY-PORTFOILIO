@@ -120,10 +120,15 @@
   }
   .contact-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
   }
+  
   .form-group input {
     min-width: 400px;
+    z-index: -200;
+  }
+  .form-group textarea{
+    z-index: -200;
   }
   .contact-head {
     font-size: 25px;

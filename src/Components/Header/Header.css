@@ -136,6 +136,7 @@
   .nav {
     width: 400px;
     height: 100px;
+    z-index: 1001;
   }
   .nav__list {
     display: grid;
