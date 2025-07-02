@@ -9,9 +9,17 @@ import Gemini from "../../assets/Gemini.jpg";
 import Movie from "../../assets/Movie.jpg";
 import Recipe from "../../assets/Recipe.jpg";
 import Cards from "./Cards";
+import Zerodha from "../../assets/Zerodha.png";
 import "./Project.css";
 
 export const details = [
+  {
+    projectName: "Zerodha Clone",
+    projectImage: Zerodha,
+    projectDescription:
+      "I developed a full-stack Zerodha clone featuring a secure login system, a modern and responsive user dashboard, and real-time stock data integration using market APIs. The platform includes dynamic, interactive stock charts (line and candlestick) powered by Chart.js or TradingView, allowing users to track live market trends. Additional features include a stock search, personalized watchlist, and simulated portfolio tracking. Built with React, Node.js, Express, and MongoDB, the app offers a seamless and intuitive stock trading experience.",
+    githubLink: "https://github.com/Yashwanth-raju005/Zerodha_Clone",
+  },
   {
     projectName: "Google Gemini(Clone)",
     projectImage: Gemini,
@@ -46,13 +54,6 @@ export const details = [
     projectDescription:
       "A simple app to calculate and split bills among friends after a meal. Enter the total amount, number of people, and it divides the cost evenly for hassle-free bill splitting! ",
     githubLink: "https://github.com/Yashwanth-raju005/Bill-Splitter",
-  },
-  {
-    projectName: "Recipe Finder",
-    projectImage: Recipe,
-    projectDescription:
-      "An app that suggests recipes based on your preferences or dietary restrictions. Browse through a variety of dishes, save your favorites, and get inspired to try new meals with ease!",
-    githubLink: "https://github.com/Yashwanth-raju005/Simple-Recipe-App",
   },
 ];
 
