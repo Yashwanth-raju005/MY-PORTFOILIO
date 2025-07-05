@@ -25,7 +25,7 @@ export const details = [
     projectImage: Gemini,
     projectDescription:
       "A responsive and dynamic trading platform built with React, featuring real-time updates, efficient state management, and sleek design, replicating Gemini's functionality seamlessly.",
-    githubLink: "https://github.com/Yashwanth-raju005/Google-Gemini-Clone",
+    githubLink: "https://github.com/Yashwanth-raju005/Gemini-AI-Clone",
   },
   {
     projectName: "Employee-Task-Manager",
