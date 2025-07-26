@@ -12,6 +12,18 @@
   align-items: center;
 }
 
+.home__description{
+  color: white;
+}
+
+.home__title{
+  color: white;
+}
+
+.home__subtitle{
+  color: white;
+}
+
 .mouse > i {
   font-size: 30px;
   padding-left: 43px;
@@ -41,15 +53,20 @@
 
 .home__social-icon img {
   
-  width: 20px;
-  filter: brightness(1.8);
+  width: 30px;
+  /* filter: brightness(1.8); */
   line-height: 20px;
   transition: filter 0.3s ease-in-out;
 }
 
 .home__social-icon img:hover {
-  filter: brightness(1); 
+  /* filter: brightness(1);  */
 }
+
+.my-btn:hover{
+  background-color:gray;
+}
+
 
 .home__social-icon {
   display: flex;

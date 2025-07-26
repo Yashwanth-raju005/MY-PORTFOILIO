@@ -12,7 +12,7 @@ const Data = () => {
         React for front-end development and Node.js for back-end solutions.
       </p>
 
-      <a href="#contact" className="button hell button--flex " >
+      <a href="#contact" className="button hell button--flex my-btn " >
         Say Hello!&nbsp;&nbsp;&nbsp;&nbsp;
         <img src="https://cdn-icons-png.flaticon.com/128/2268/2268536.png" alt=""  className="arr-icon"/>
       </a>

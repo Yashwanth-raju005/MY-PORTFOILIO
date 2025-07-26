@@ -21,6 +21,22 @@
   margin-bottom: var(--mb-2);
 }
 
+.section__title{
+  color: white;
+}
+.section__subtitle{
+  color: white;
+}
+
+.about__description{
+  color: white;
+}
+
+.my-btn:hover{
+  background-color: white;
+  color: black;
+}
+
 .about__box {
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -28,6 +44,13 @@
   text-align: center;
   padding: 1rem 1.25rem;
 }
+
+.button {
+  position: relative;
+  z-index: 3; /* ensure it's clickable */
+}
+
+
 
 .about__icon {
   font-size: 1.5rem;
@@ -112,7 +135,19 @@
 
 /* For small devices */
 @media screen and (max-width: 576px) {
+
+  .section__title{
+    margin-right: 300px;
+  }
+
+  .section__subtitle{
+    margin-right: 300px;
+  }
+
   .about {
     margin-left: 40px;
+  }
+  .about{
+    font-size: 20px;
   }
 }

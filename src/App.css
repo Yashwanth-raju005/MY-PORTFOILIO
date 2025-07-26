@@ -122,6 +122,22 @@ img {
   height: auto;
 }
 
+main{
+  background-color: black;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+
+header, .header {
+  position: relative;
+  z-index: 2;
+}
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 0 2rem;
@@ -188,6 +204,10 @@ img {
     margin-right: var(--mb-1-5);
   }
 
+  main{
+    width: 160vw;
+  }
+
   .button {
     padding: 1rem 1.75rem;
   }
@@ -205,6 +225,10 @@ img {
     margin: 0 0 var(--header-height) 0;
   }
 
+  main{
+    min-width: 150vh;
+  }
+
   .section {
     padding: 2rem 0 4rem;
   }
@@ -215,12 +239,22 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  main{
+    min-width: 180vh;
+  }
+
+  
+
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem;
+  }
+
+  main{
+    min-width: 150vh;
   }
 
   .container {

@@ -5,8 +5,8 @@ import "./qualif.css";
 const Qualification = () => {
   return (
     <section className="qualification section " id="qualification">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My Personel Journey</span>
+      <h2 className="section__title text-white">Qualification</h2>
+      <span className="section__subtitle text-white">My Personel Journey</span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">

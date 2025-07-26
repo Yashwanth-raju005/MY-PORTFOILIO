@@ -8,12 +8,25 @@
   margin-bottom: var(--mb-2);
 }
 
+
 .qualification__button {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   color: var(--title-color);
   margin: 0 var(--mb-1);
   cursor: pointer;
+}
+
+.qualification__title {
+  color: white;
+}
+
+.qualification__subtitle{
+  color: rgb(31, 227, 67);
+}
+
+.qualification__calender{
+  color: white;
 }
 
 .qualification__button:hover {
@@ -88,16 +101,23 @@
     display: flex;
   }
   .section__title {
-    font-size: 25px;
+    font-size: 40px;
     margin-left: 80px;
   }
   .section__subtitle {
     margin-left: 80px;
+    font-size: 20px;
   }
+  
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .qualification__container {
     margin-left: 200px;
   }
+
+  .qualification__title{
+    font-size: 40px;
+  }
+
 }

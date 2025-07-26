@@ -1,147 +1,169 @@
-.card-sub {
-  border: 2px solid black;
-  width: 370px;
-  margin-left: 30px;
-  margin-top: 90px;
-  border-radius: 14px;
-  height: 450px;
+.project.section {
+  padding: 2rem;
+  background-color: #121212;
 }
 
-.main-card {
-  padding: 0px 70px 0px 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
-}
-
-.card-sub {
-  background: url("https://imgs.search.brave.com/z1rKOVpTEuOVNHUmtNwO1ik4nL_C_9Tna9WyJYE_SeY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMTgvMDkv/TmF0dXJhbC1Xb29k/LVBhbmVscy1TaW1w/bGUtQmFja2dyb3Vu/ZC1JbWFnZS5qcGVn");
-}
-
-.card-details > details > p {
-  height: 100px;
-  overflow-y: scroll;
-  color: rgb(36, 230, 52);
-}
-
-.card-details > details > summary {
-  color: white;
-}
-
-.card-details > details > p::-webkit-scrollbar {
-  display: none;
-}
-
-.main-card::-webkit-scrollbar {
-  display: none;
+.project-head {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 .pro-head {
-  font-size: 31px;
+  font-size: 32px;
+  color: white;
+  margin: 0;
+  text-align: center;
 }
 
-.card-img > img {
-  width: 367px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+.project-head p {
+  color: #ccc;
+  margin-top: 0.5rem;
+  font-size: 18px;
+  text-align: center;
 }
 
-.bu > button {
-  width: 100px;
+.card-main{
+  position:static;
+  z-index: 300;
 }
 
-.card-techstacks {
+.main-card {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.card-sub {
+  background: #1e1e1e;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #333;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tech-icons > i {
-  font-size: 30px;
+.card-sub:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .card-title {
-  padding-left: 3px;
-  padding-top: 19px;
+  padding: 1rem;
 }
 
 .card-title h3 {
-  color: white;
+  margin: 0;
+  color: #f4f4f4;
 }
 
 .card-details {
-  padding-top: 15px;
-  padding-left: 7px;
+  padding: 0 1rem 1rem;
+}
+
+.card-details details summary {
+  color: #ffd700;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-details details p {
+  margin-top: 0.5rem;
+  max-height: 100px;
+  overflow-y: auto;
+  color: #e0ffe0;
+  font-size: 14px;
+}
+
+.card-details details p::-webkit-scrollbar {
+  display: none;
 }
 
 .card-techstacks {
-  padding: 0px 4px 0px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 14px;
+  margin-bottom: 1rem;
 }
 
-.card-img:hover {
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  transition: 0.23s;
-  transform: scale(1.2);
-  border: 1px solid grey;
-  cursor: pointer;
+.tech-icons i {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #ffde59;
 }
 
-.tech-icons:hover {
-  color: rgb(79, 79, 138);
-}
-
-.click-pic{
-  width: 20px;
+.tech-icons i:hover {
+  color: #7ec8e3;
 }
 
 .card-btn {
-  background-color:black;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  background-color: black;
+  border: 2px solid yellow;
   color: white;
-  border-radius: 5px;
-  padding: 4px;
-  margin-top: 10px;
-  border: 2px yellow solid;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 576px) {
-  .main-card {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-left: 40px;
-  }
-  .project-head {
-    font-size: 22px;
-    margin-left: 100px;
-  }
-  .footer {
-    margin-left: 70px;
-  }
-
-  .project-head {
-    font-size: 25px;
-    margin-left: 200px;
-  }
+.card-btn:hover {
+  background-color: yellow;
+  color: black;
+  transition: 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  .project-head h2 {
-    margin-left: 400px;
-    font-size: 40px;
+.click-pic {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-head {
+    padding-left: 1rem;
   }
+
+  .pro-head {
+    font-size: 28px;
+  }
+
   .project-head p {
-    margin-left: 400px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .main-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 100px;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pro-head {
+    font-size: 24px;
+  }
+
+  .project-head p {
+    font-size: 14px;
+  }
+
+  .card-techstacks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
