@@ -6,7 +6,7 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
-        href="https://www.instagram.com/itzzz.yashuuuu/"
+        href="https://www.instagram.com/_._yashu7_._/"
         className="home__social-icon"
         target="_blank"
       >
@@ -43,7 +43,7 @@ const Social = () => {
         target="_blank"
       >
         <img
-          src="https://miro.medium.com/v2/resize:fit:1020/0*xJCLQQRZv3XFMUd1"
+          src="https://leetcode.com/static/images/LeetCode_logo_rvs.png"
           alt=""
           style={{ width: "45px" }}
         />
