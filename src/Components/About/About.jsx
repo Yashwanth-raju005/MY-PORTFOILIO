@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import MYPIC from "../../assets/MYPIC.jpg";
-import Resume from "../../../public/Resume.pdf"
+import Resume from '../../../public/Resume.pdf'
 import "./about.css";
 import Info from "./Info";
 
