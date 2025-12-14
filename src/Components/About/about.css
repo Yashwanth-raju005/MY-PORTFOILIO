@@ -2,6 +2,8 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 4rem;
+  
+
 }
 
 .about__img {
@@ -92,6 +94,7 @@
 @media screen and (max-width: 768px) {
   .about__container {
     grid-template-columns: 1fr;
+    margin-left: 300px;
     row-gap: 2.5rem;
   }
   .about__img {
@@ -137,11 +140,11 @@
 @media screen and (max-width: 576px) {
 
   .section__title{
-    margin-right: 300px;
+    text-align: center;
   }
 
   .section__subtitle{
-    margin-right: 300px;
+    text-align: center;
   }
 
   .about {
@@ -151,3 +154,101 @@
     font-size: 20px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================
+   ABOUT INFO – UNIQUE CARD STYLE
+   ============================== */
+
+.about__info {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card */
+.about__box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.8rem 1.2rem;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+/* Accent bar */
+.about__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00ffcc, #00bfff);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* Icon */
+.about__box i {
+  font-size: 2.2rem;
+  color: #00ffcc;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+  transition: transform 0.35s ease;
+}
+
+/* Title */
+.about__title {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+/* Subtitle */
+.about__subtitle {
+  font-size: 0.75rem;
+  color: #bdbdbd;
+  letter-spacing: 0.4px;
+}
+
+/* Hover effects */
+.about__box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about__box:hover::before {
+  opacity: 1;
+}
+
+.about__box:hover i {
+  transform: scale(1.15) rotate(-4deg);
+}
+
+
+

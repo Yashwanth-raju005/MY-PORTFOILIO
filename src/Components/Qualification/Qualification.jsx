@@ -4,82 +4,44 @@ import "./qualif.css";
 
 const Qualification = () => {
   return (
-    <section className="qualification section " id="qualification">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title text-white">Qualification</h2>
-      <span className="section__subtitle text-white">My Personel Journey</span>
+      <span className="section__subtitle text-white">
+        My Learning Roadmap
+      </span>
 
-      <div className="qualification__container container">
-        <div className="qualification__tabs">
-          <div className="qualification__button qualification__active button--flex">
-            <i className="uil uil-graduation-cap qualification__icon"></i>{" "}
-            Education
-          </div>
+      <div className="qualification__roadmap">
 
-          {/* <div className="qualification__button button--flex">
-            <i className="uil uil-briefcase-alt qualification__icon"></i>{" "}
-            Experience
-          </div> */}
-        </div>
-
-        <div className="qualification__section">
-          <div className="qualification__content">
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Computer Science Engineering</h3>
-                <span className="qualification__subtitle">Amrita University,Chennai</span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt">2023-2027</i>
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">MPC</h3>
-                <span className="qualification__subtitle">Narayana Junior College,Nellore</span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt">2021-2023</i>
-                </div>
-              </div>
-            </div>
-
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">State Board</h3>
-                <span className="qualification__subtitle">Narayana E.M High School,Kadapa</span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt">2020-2021</i>
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-
-            
-
-
-
-
+        {/* STEP 1 */}
+        <div className="roadmap__item">
+          <div className="roadmap__index">01</div>
+          <div className="roadmap__card">
+            <h3>Computer Science Engineering</h3>
+            <p>Amrita University, Chennai</p>
+            <span>2023 – 2027</span>
           </div>
         </div>
+
+        {/* STEP 2 */}
+        <div className="roadmap__item">
+          <div className="roadmap__index">02</div>
+          <div className="roadmap__card">
+            <h3>MPC</h3>
+            <p>Narayana Junior College, Nellore</p>
+            <span>2021 – 2023</span>
+          </div>
+        </div>
+
+        {/* STEP 3 */}
+        <div className="roadmap__item">
+          <div className="roadmap__index">03</div>
+          <div className="roadmap__card">
+            <h3>State Board</h3>
+            <p>Narayana E.M High School, Kadapa</p>
+            <span>2020 – 2021</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );

@@ -5,16 +5,27 @@ import "./home.css";
 const Data = () => {
   return (
     <div className="home__data">
-      <h1 className="home__title">Yashwanth Raju S 👋</h1>
-      <h3 className="home__subtitle">Web Developer</h3>
+      <h1 className="home__title">
+        Yashwanth Raju S <span role="img" aria-label="wave">🧑‍💻</span>
+      </h1>
+
+      <h3 className="home__subtitle">
+        Full Stack Web Developer (M E R N)
+      </h3>
+
       <p className="home__description">
-        A passionate web developer skilled in building dynamic websites using
-        React for front-end development and Node.js for back-end solutions.
+        I am a results-driven web developer with strong experience in building scalable, high-performance web applications. I specialize in creating
+        clean, responsive user interfaces using React, and developing secure,
+        efficient backend services with Node.js and modern databases.
       </p>
 
-      <a href="#contact" className="button hell button--flex my-btn " >
-        Say Hello!&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://cdn-icons-png.flaticon.com/128/2268/2268536.png" alt=""  className="arr-icon"/>
+      <a href="#contact" className="button hell button--flex my-btn">
+        Let’s Connect 
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/2268/2268536.png"
+          alt="arrow"
+          className="arr-icon"
+        />
       </a>
     </div>
   );

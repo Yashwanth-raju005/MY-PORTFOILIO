@@ -4,10 +4,10 @@ import "./home.css";
 
 const Social = () => {
   return (
-    <div className="home__social">
+    <div className="home__social ">
       <a
         href="https://www.instagram.com/_._yashu7_._/"
-        className="home__social-icon"
+        className="home__social-icon "
         target="_blank"
       >
         <img
@@ -15,6 +15,7 @@ const Social = () => {
           alt=""
           style={{ width: "45px" }}
         />
+        
       </a>
       <a
         href="https://www.linkedin.com/in/yashwanth-raju-s-2a09a42a5/"
@@ -43,9 +44,9 @@ const Social = () => {
         target="_blank"
       >
         <img
-          src="https://leetcode.com/static/images/LeetCode_logo_rvs.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
           alt=""
-          style={{ width: "45px" }}
+          style={{ width: "35px"}}
         />
       </a>
 

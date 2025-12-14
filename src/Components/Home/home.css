@@ -14,6 +14,9 @@
 
 .home__description{
   color: white;
+  margin-left: 90px ;
+  text-align: justify;
+  min-width:500px;
 }
 
 .home__title{
@@ -132,7 +135,7 @@
 }
 
 .home__img {
-  background: url("../../assets/MYPIC.jpg");
+  background: url("../../assets/MYPIC.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -222,3 +225,36 @@
   .about__container {
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home__social-icon{
+  /* background-color: #00ffcc  ; */
+  border-radius: 12px;
+  border: 0.25px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

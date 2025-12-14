@@ -1,68 +1,39 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React from "react";
 
 const Backend = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">BACKEND</h3>
-      <div className="skills__box">
-        <div className="skills__group">
+      <h3 className="skills__title">Backend & Databases</h3>
 
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-                <h3 className="skills__name">NODE.JS</h3>
-                <span className="skills__level">BASIC</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-                <h3 className="skills__name">MYSQL</h3>
-                <span className="skills__level">BASIC</span>
-            </div>
-          </div>
-
-          
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-                <h3 className="skills__name">FIREBASE</h3>
-                <span className="skills__level">BASIC</span>
-            </div>
-          </div>
+      <div className="skills__icons">
+        <div className="skill__item">
+          <i className="bx bxl-nodejs skill__icon"></i>
+          <p className="skill__text">Node.js</p>
         </div>
-        <div className="skills__group">
-            
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-                <h3 className="skills__name">JWT TOKENS</h3>
-                <span className="skills__level">BASIC</span>
-            </div>
-          </div>
 
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Git [Tool]</h3>
-              <span className="skills__level">BASIC</span>
-            </div>
-          </div>
+        <div className="skill__item">
+          <i className="bx bx-server skill__icon"></i>
+          <p className="skill__text">Express.js</p>
+        </div>
 
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-                <h3 className="skills__name">PAYMENT GATEWAYS</h3>
-                <span className="skills__level">BASIC</span>
-            </div>
-          </div>
+        <div className="skill__item">
+          <i className="bx bxl-mongodb skill__icon"></i>
+          <p className="skill__text">MongoDB</p>
+        </div>
+
+        <div className="skill__item">
+          <i className="bx bxs-data skill__icon"></i>
+          <p className="skill__text">MySQL</p>
+        </div>
+
+        <div className="skill__item">
+          <i className="bx bx-plug skill__icon"></i>
+          <p className="skill__text">API Design</p>
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Backend;

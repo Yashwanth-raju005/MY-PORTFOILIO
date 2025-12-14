@@ -1,166 +1,124 @@
-.contact-form-container {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  width: 100%;
+/* ===========================
+   CONTACT – NEXT LEVEL DESIGN
+   =========================== */
+
+.contact {
+  padding: 4rem 1rem;
+}
+
+/* HEADER */
+.contact__header {
   text-align: center;
-  margin-top: 50px;
+  margin-bottom: 3rem;
 }
 
-.contact-head h2{
-  color: white;
+.contact__header h2 {
+  font-size: 2.2rem;
+  color: #ffffff;
 }
 
-.footer{
-  color:rgb(245, 241, 235);
+.contact__header p {
+  color: #bdbdbd;
+  font-size: 0.95rem;
 }
 
-
-.contact-head {
-  padding-top: 50px;
+/* CONTAINER */
+.contact__container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
-/* Updated Form Layout */
-.contact-form {
+/* INTRO */
+.contact__intro h3 {
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+.contact__intro p {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* FORM */
+.contact__form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contact__row {
+  display: flex;
   gap: 1rem;
 }
 
-.form-left {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-}
-
-.contact-head h2{
-  font-size: 31px
-}
-
-.form-right {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-}
-
-/* Form Styling */
+/* INPUTS */
 .form-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
 }
 
 .form-group label {
-  display: block;
-  font-weight: bold;
-  color: #000000;
+  font-size: 0.8rem;
+  color: #bdbdbd;
   margin-bottom: 0.3rem;
 }
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  background-color: #ffffff;
-  color: #333;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0b0b0b;
+  color: #ffffff;
+  font-size: 0.9rem;
 }
 
 .form-group textarea {
-  resize: vertical;
-  min-height: 250px;
-  min-width: 450px;
+  min-height: 160px;
+  resize: none;
 }
 
-.submit-button {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* BUTTON */
+.contact__btn {
   margin-top: 1rem;
-  width: 100%;
-  height: 50px;
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #00ffcc, #00bfff);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.submit-button::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  border: 2px solid #ffffff;
-  border-radius: 6px;
-  opacity: 0;
+.contact__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 255, 204, 0.5);
 }
 
-.submit-button:hover {
-  background-color: #333333;
-}
+/* FOOTER */
+.contact__footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.8rem;
+} 
 
-/* Border Animation */
-@keyframes borderAnimation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.footer {
-  padding: 40px 0px 10px 0px;
-}
-
-@media screen and (max-width: 576px) {
-  .contact-form-container {
-    min-width: 600px;
-  }
-  .contact-form {
-    display: flex;
-    flex-direction: column; 
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .contact__row {
+    flex-direction: column;
   }
 
-  .form-group{
-    z-index: 1;
+  .contact__container {
+    padding: 2rem 1.5rem;
   }
-  
-  .form-group input {
-    min-width: 400px;
-  }
-  .form-group textarea{
-  }
-  .contact-head {
-    font-size: 25px;
-    margin-left: 50px;
-  }
-}
-
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  .contact-head h2 {
-    margin-left: 500px;
-    font-size: 40px;
-  }
-  .contact-head p {
-    margin-left: 400px;
-    font-size: 20px;
-  }
-  .contact-form-container {
-    margin-left: 120px;
-    min-width: 1000px;
-  }
-
-
-
 }
