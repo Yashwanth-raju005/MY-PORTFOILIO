@@ -1,169 +1,128 @@
-.project.section {
-  padding: 2rem;
-  background-color: #121212;
-}
+/* =========================
+   PROJECT SECTION
+   ========================= */
 
-.project-head {
-  text-align: left;
-  margin-bottom: 2rem;
-  padding-left: 2rem;
+.project {
+  background: #121212;
+  padding: 4rem 1rem;
 }
 
 .pro-head {
-  font-size: 32px;
   color: white;
-  margin: 0;
   text-align: center;
+  font-size: 2rem;
 }
 
-.project-head p {
-  color: #ccc;
-  margin-top: 0.5rem;
-  font-size: 18px;
+.pro-sub {
+  color: #bdbdbd;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
-.card-main{
-  position:static;
-  z-index: 300;
-}
+/* ONE COLUMN LIST */
 
-.main-card {
+.project-list {
+  max-width: 1100px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 2rem;
-  padding: 0 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
 }
 
-.card-sub {
-  background: #1e1e1e;
-  border-radius: 14px;
+/* CARD */
+.project-card {
+  perspective: 1200px;
+}
+
+/* INNER */
+.project-card__inner {
+  position: relative;
+  height: 280px;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* FLIP ON HOVER */
+.project-card:hover .project-card__inner {
+  transform: rotateX(180deg);
+}
+
+/* FRONT & BACK */
+.project-card__front,
+.project-card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  backface-visibility: hidden;
   overflow: hidden;
-  border: 2px solid #333;
-  color: white;
+}
+
+/* FRONT */
+.project-card__front {
+  background: #1e1e1e;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-sub:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-.card-img img {
+.project-card__front img {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
 }
 
-.card-title {
+.project-card__front h3 {
   padding: 1rem;
-}
-
-.card-title h3 {
-  margin: 0;
-  color: #f4f4f4;
-}
-
-.card-details {
-  padding: 0 1rem 1rem;
-}
-
-.card-details details summary {
-  color: #ffd700;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.card-details details p {
-  margin-top: 0.5rem;
-  max-height: 100px;
-  overflow-y: auto;
-  color: #e0ffe0;
-  font-size: 14px;
-}
-
-.card-details details p::-webkit-scrollbar {
-  display: none;
-}
-
-.card-techstacks {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  font-size: 14px;
-  margin-bottom: 1rem;
-}
-
-.tech-icons i {
-  font-size: 24px;
-  margin-left: 10px;
-  color: #ffde59;
-}
-
-.tech-icons i:hover {
-  color: #7ec8e3;
-}
-
-.card-btn {
-  background-color: black;
-  border: 2px solid yellow;
   color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+}
+
+/* BACK */
+.project-card__back {
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  color: white;
+  transform: rotateX(180deg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card__back p {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+/* TECH ICONS */
+.tech-icons i {
+  font-size: 1.8rem;
+  margin-right: 12px;
+  color: #00ffcc;
+}
+
+/* BUTTON */
+.card-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  border: none;
+  background: #00ffcc;
+  color: #000;
+  font-weight: 600;
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 
 .card-btn:hover {
-  background-color: yellow;
-  color: black;
-  transition: 0.3s ease-in-out;
+  background: #00bfa5;
 }
 
-.click-pic {
-  width: 20px;
-  height: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .project-head {
-    padding-left: 1rem;
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  .project-card__inner {
+    height: 320px;
   }
 
-  .pro-head {
-    font-size: 28px;
-  }
-
-  .project-head p {
-    font-size: 16px;
-  }
-
-  .main-card {
-    padding: 0 1rem;
-    gap: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .pro-head {
-    font-size: 24px;
-  }
-
-  .project-head p {
-    font-size: 14px;
-  }
-
-  .card-techstacks {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .project-card__back {
+    padding: 1.5rem;
   }
 }

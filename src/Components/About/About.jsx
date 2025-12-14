@@ -31,7 +31,7 @@ const About = () => {
             target="_blank"
             rel="noreferrer"
             href={Resume}
-            className="button button--flex my-btn"
+            className="button button--flex my-btn "
           >
             Download CV
             <img

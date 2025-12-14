@@ -12,62 +12,61 @@ import EatnSplit from "../../assets/eat&split.jpg";
 
 export const details = [
   {
-    projectName: "Zerodha Clone",
+    projectName: "Zerodha Trading Platform",
     projectImage: Zerodha,
     projectDescription:
       "A full-stack Zerodha clone with login, charts, real-time stock API, and simulated trading.",
     githubLink: "https://github.com/Yashwanth-raju005/Zerodha_Clone",
   },
   {
-    projectName: "Google Gemini(Clone)",
+    projectName: "Google Gemini Replica",
     projectImage: Gemini,
     projectDescription:
-      "Gemini AI clone using React, responsive UI with prompt handling.",
+      "AI-powered Gemini clone using React with prompt handling and responsive UI.",
     githubLink: "https://github.com/Yashwanth-raju005/Gemini-AI-Clone",
   },
   {
     projectName: "Employee Task Manager",
     projectImage: Employee,
     projectDescription:
-      "Dashboard-based task management app for admins and employees.",
+      "Role-based dashboard for admins and employees to manage tasks efficiently.",
     githubLink: "https://github.com/Yashwanth-raju005/Employee-Task-Assigner",
   },
   {
     projectName: "Movie App",
     projectImage: Movie,
     projectDescription:
-      "Search movies, view details, and save to watch later.",
+      "Search movies, explore details, and save favorites to watch later.",
     githubLink: "https://github.com/Yashwanth-raju005/POPCORN-MOVIE-APP",
   },
   {
     projectName: "E-Commerce Site",
     projectImage: Ecom,
     projectDescription:
-      "Shopping app with product view, search and cart features.",
+      "E-commerce app with product listing, search, and cart functionality.",
     githubLink: "https://github.com/Yashwanth-raju005/React-Shopping-Site",
   },
   {
     projectName: "Eat & Split Bill",
     projectImage: EatnSplit,
     projectDescription:
-      "Split your meal bills quickly among friends.",
+      "Quickly split bills among friends with clean UI and logic.",
     githubLink: "https://github.com/Yashwanth-raju005/Bill-Splitter",
   },
 ];
 
 const Project = () => {
   return (
-    <div className="project section" id="projects">
-      <div className="project-head">
-        <h2 className="pro-head">Projects</h2>
-        <p>Built Items</p>
-      </div>
-      <div className="main-card">
+    <section className="project section" id="projects">
+      <h2 className="pro-head">Projects</h2>
+      <p className="pro-sub">Selected Work</p>
+
+      <div className="project-list">
         {details.map((pro) => (
           <Cards key={pro.projectName} pro={pro} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
